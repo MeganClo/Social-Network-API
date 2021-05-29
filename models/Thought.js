@@ -2,7 +2,11 @@ const { Schema, model } = require('mongoose');
 
 const ThoughtSchema = new Schema({
     thoughtText: {
-        type: String
+        type: String,
+        required: "You must enter a thought",
+        minLength: 1,
+        maxLength: 280,
+
     },
     username: {
         type: String
