@@ -70,6 +70,14 @@ const userController = {
                 }
                 res.json(dbUserData);
             })
+            .then(() => {
+                // remove user comments
+                Thought.deleteMany({ username: dbUserData.username })
+                .then(() => {
+                    res.json({ message: "Deleted user!"});
+                })
+                .catch(err => res.status(400).json(err));
+            })
             .catch(err => res.status(400).json(err));
     }
 };
