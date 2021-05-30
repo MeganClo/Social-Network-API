@@ -4,18 +4,20 @@ const dateFormat = require('../utils/dateFormat');
 const ReactionSchema = new Schema(
     {
         // set custom id to avoid confusion with parent thought _id
-        reactiionId: {
+        reactionId: {
             type: Schema.Types.ObjectId,
             default: () => new Types.ObjectId()
         },
-        thoughtBody: {
+        reactionBody: {
             type: String,
             required: "You must provide a reply",
-            trim: true
+            trim: true,
+            minLength: 1,
+            maxLength: 280,
         },
-        writtenBy: {
+        username: {
             type: String,
-            required: true
+            required: true,
         },
         createdAt: {
             type: Date,
