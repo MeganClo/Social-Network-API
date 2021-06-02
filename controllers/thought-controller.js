@@ -24,7 +24,17 @@ const thoughtController = {
             select: "-__v"
         })
         .select("-__v")
-        .then(dbUserData) {}
+        .then(dbThoughtData => {
+            if (!dbThoughtData) {
+                res.status(404).json({ message: "No thought found with this id" });
+                return;
+            }
+            res.json(dbThoughtData);
+        }) 
+        .catch(err => {
+            console.log(err);
+            res.status(400).json(err);
+          });
     },
     // add a thought  
     addThought({ params, body }, res) {
