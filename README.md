@@ -1,4 +1,4 @@
-# Social-Network-API :busts_in_silhouette::busts_in_silhouette::busts_in_silhouette:
+# :busts_in_silhouette: Social-Network-API :busts_in_silhouette:
 
 ## Description
 An API for a social network that uses a NoSQL database so that it can handle large amounts of unstructured data. 
