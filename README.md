@@ -6,6 +6,7 @@ An API for a social network that uses a NoSQL database so that it can handle lar
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
+* [Built-With](#Built-With)
 * [License-Information](#License-Information)
 * [Questions](#Questions)
 
@@ -18,7 +19,15 @@ To install this application and necessary tools follow these steps:
 4. In the command line type "npm install"
 
 ## Usage
-To use this application, 
+To use this application you must have MongoDB installed on our local machine. If it's not, follow the instructions on the MongoDB [website.](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_united_states_search_brand_atlas_desktop&utm_term=%2Binstall%20%2Bmongodb&utm_medium=cpc_paid_search&utm_ad=b&utm_ad_campaign_id=1718986498&gclid=Cj0KCQjw2NyFBhDoARIsAMtHtZ5LlBWhU-XQp1KCC2a74fYkoDZzxTUgwGEbSFkBFei53cHnQJOSkFEaAg9tEALw_wcB) After MongoDB is installed and you've followed the installation instructions above, after running "npm start", you can test the routes in the browser or an app such as Insomnia or Postman to set the REST API. 
+
+## Built-With 
+  * Node.js 
+    - express
+    - mongoose
+  * NoSql
+    -MongoDB
+  * JavaScript
 
 ## License-Information 
   * The MIT License
@@ -27,6 +36,6 @@ To use this application,
 :mailbox:
 Author: Megan Close
 
-Check out my GitHub Profile [here](https://github.com/MeganClo)
+Check out my GitHub Profile [here.](https://github.com/MeganClo)
 
 Please email me with any questions or comments: <megs.close@gmail.com>
