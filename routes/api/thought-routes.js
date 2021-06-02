@@ -22,7 +22,7 @@ router
     .put(updateThought);
 
 router
-    .route("/thoughtId/reactions")
+    .route("/:id/reactions")
     .post(addReaction)
     .delete(removeReaction);
 
