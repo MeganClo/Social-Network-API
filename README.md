@@ -1,4 +1,4 @@
-# :family_man_woman_boy_boy: Social-Network-API :family_woman_woman_girl_boy:
+# :people_holding_hands: Social-Network-API :thought_balloon:
 
 ## Description
 An API for a social network that uses a NoSQL database so that it can handle large amounts of unstructured data. 
