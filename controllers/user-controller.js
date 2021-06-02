@@ -2,7 +2,7 @@ const { User } = require('../models');
 
 const userController = {
     // GET all Users
-    getAllUser(req, res) {
+    getAllUsers(req, res) {
         User.find({})
             .select('-__v')
             .then(dbUserData => res.json(dbUserData))
@@ -110,6 +110,16 @@ const userController = {
             })
             .catch(err => res.status(400).json(err));
     },
+
+    // DELETE a friend
+    deleteFriend({ params }, res) {
+        User.findOneAndUpdate({ _id: params.id })
+            .then(dbUserData => {
+                if(!dbUserData) {
+                    res.status(404).json({ message: "No User found with this Id." })
+                }
+            })
+    }
 };
 
 
