@@ -1,4 +1,4 @@
-# :busts_in_silhouette: Social-Network-API :busts_in_silhouette:
+# :family_man_woman_boy_boy: Social-Network-API :family_woman_woman_girl_boy:
 
 ## Description
 An API for a social network that uses a NoSQL database so that it can handle large amounts of unstructured data. 
