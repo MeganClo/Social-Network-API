@@ -38,21 +38,21 @@ const thoughtController = {
     },
     // add a thought  
     addThought({ params, body }, res) {
-        console.log(body);
+        console.log("this is params", params);
         Thought.create(body)
             .then(({ _id }) => {
                 return User.findOneAndUpdate(
-                    { _id: params.userId },
+                    { _id: body.userId },
                     { $push: { thoughts: _id } },
                     { new: true, runValidators: true } 
                 );
             })
-            .then(dbUserData => {
-                if (!dbUserData) {
-                    res.status(400).json({ message: "No User found with this ID."});
+            .then(dbThoughtData => {
+                if (!dbThoughtData) {
+                    res.status(400).json({ message: "No Thought found with this ID."});
                     return;
                 }
-                res.json(dbUserData);
+                res.json(dbThoughtData);
             })
             .catch(err => res.json(err));
     },
