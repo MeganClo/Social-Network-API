@@ -1,7 +1,7 @@
 # :people_holding_hands: Social-Network-API :thought_balloon:
 
 ## Description
-An API for a social network that uses a NoSQL database so that it can handle large amounts of unstructured data. 
+RESTful API for a social network that uses a NoSQL database so that it can handle large amounts of unstructured data. Watch a video walkthrough of the routes being tested [here.](https://drive.google.com/file/d/1rLU75oMKJuQDN5EsugnKzpUal5ChWays/view?usp=sharing)
 
 ## Table of Contents
 * [Installation](#Installation)
